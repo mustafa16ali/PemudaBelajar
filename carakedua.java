@@ -8,13 +8,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//Import 2 library di bawah ini seperti biasanya ya
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Nama variabel bebas, boleh ikut namanya seperti pa guru atau bikin sendiri
     private TextView inputmasuk;
     private TextView hasil;
     private String currentInput = "";
@@ -47,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         Button buttonClear = findViewById(R.id.c);
         Button buttonKoma = findViewById(R.id.koma);
 
-        // Tombol untuk angka dan operasi bilangan
         button0.setOnClickListener(v -> appendToInput("0"));
         button1.setOnClickListener(v -> appendToInput("1"));
         button2.setOnClickListener(v -> appendToInput("2"));
@@ -75,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Methode ini digunakan untuk mengecek bilamana ada kesalahan atau error
     private void evaluateExpression() {
         try {
             Expression expression = new ExpressionBuilder(currentInput).build();
@@ -93,11 +89,3 @@ public class MainActivity extends AppCompatActivity {
         hasil.setText("");
     }
 }
-//Penjelasan Kode
-//exp4j digunakan untuk mengevaluasi ekspresi matematika yang dimasukkan oleh pengguna.
-//currentInput menyimpan ekspresi yang sedang diketik oleh pengguna.
-//Ketika tombol "=" ditekan, ekspresi di-evaluasi dan hasilnya ditampilkan di layar.
-//Tombol "C" digunakan untuk membersihkan input yang sedang diproses.
-//Fungsi appendToInput menambahkan angka atau operator ke currentInput dan memperbarui tampilan layar.
-//Fungsi evaluateExpression mengonversi string ekspresi menjadi objek Expression dari exp4j, mengevaluasi hasilnya, dan menampilkan hasilnya.
-//Fungsi clearInput menghapus semua input.
