@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/solve"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="170dp">
+    </TextView>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TableRow>
+            <Button
+                android:id="@+id/C"
+                android:backgroundTint="#004C4C4C"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:text="C"
+                android:textColor="#FF5100"
+                android:textSize="30dp"
+                android:layout_span="2"/>
+
+            <Button
+                android:id="@+id/tombolKoma"
+                android:backgroundTint="#004C4C4C"
+                android:text="."
+                android:textSize="30dp"
+                android:layout_marginHorizontal="7dp"/>
+
+
+            <Button
+                android:id="@+id/bagi"
+                android:backgroundTint="#004C4C4C"
+                android:text="/"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="7dp"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/nomor7"
+                android:backgroundTint="#00252424"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:text="7"
+                android:textColor="#109C00"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/nomor8"
+                android:backgroundTint="#00252424"
+                android:text="8"
+                android:textSize="30dp"
+                android:textColor="#109C00"
+                android:layout_marginHorizontal="7dp"/>
+
+            <Button
+                android:id="@+id/nomor9"
+                android:backgroundTint="#00252424"
+                android:text="9"
+                android:textSize="30dp"
+                android:textColor="#109C00"
+                android:layout_marginHorizontal="7dp"/>
+
+            <Button
+                android:id="@+id/tambah"
+                android:backgroundTint="#004C4C4C"
+                android:text="+"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="7dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/nomor4"
+                android:backgroundTint="#00252424"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:text="4"
+                android:textColor="#109C00"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/nomor5"
+                android:backgroundTint="#00252424"
+                android:text="5"
+                android:textSize="30dp"
+                android:textColor="#109C00"
+                android:layout_marginHorizontal="7dp"/>
+
+            <Button
+                android:id="@+id/nomor6"
+                android:backgroundTint="#00252424"
+                android:text="6"
+                android:textSize="30dp"
+                android:textColor="#109C00"
+                android:layout_marginHorizontal="7dp"/>
+
+            <Button
+                android:id="@+id/kali"
+                android:backgroundTint="#004C4C4C"
+                android:text="*"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="7dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/nomor1"
+                android:backgroundTint="#00252424"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:text="1"
+                android:textColor="#109C00"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/nomor2"
+                android:backgroundTint="#00252424"
+                android:text="2"
+                android:textSize="30dp"
+                android:textColor="#109C00"
+                android:layout_marginHorizontal="7dp"/>
+
+            <Button
+                android:id="@+id/nomor3"
+                android:backgroundTint="#00252424"
+                android:text="3"
+                android:textSize="30dp"
+                android:textColor="#109C00"
+                android:layout_marginHorizontal="7dp"/>
+
+            <Button
+                android:id="@+id/pengkurangan"
+                android:backgroundTint="#004C4C4C"
+                android:text="-"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="7dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TableRow>
+
+
+            <Button
+                android:id="@+id/nomor0"
+                android:backgroundTint="#00252424"
+                android:layout_width="189dp"
+                android:layout_marginHorizontal="7dp"
+                android:text="0"
+                android:textColor="#109C00"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/samadengan"
+                android:backgroundTint="#00A108"
+                android:layout_width="191dp"
+                android:layout_marginHorizontal="7dp"
+                android:text="="
+                android:textSize="30dp" />
+
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
